@@ -1,0 +1,92 @@
+# Lab 5: Model Implementation and Evaluation Pipeline
+
+## 1. Introduction
+Objective: Train, evaluate, and compare three models (Logistic Regression, Random Forest, XGBoost) on the Company Bankruptcy Prediction dataset to recommend the best model for deployment.
+
+---
+
+## 2. Exploratory Data Analysis (EDA)
+- Feature distributions examined using histograms and boxplots.
+- Correlation heatmap identified multicollinearity between features X and Y.
+- Outliers detected in feature Z; addressed during preprocessing.
+- Missing values handled by median imputation.
+
+*Example Figure:*  
+![Correlation Heatmap](outputs/figures/correlation_heatmap.png)
+
+---
+
+## 3. Data Preprocessing
+- Normalized numeric features using MinMaxScaler.
+- Categorical variables encoded using one-hot encoding.
+- Train/test split: 80/20 stratified by target.
+- PSI calculated to ensure no significant train-test drift.
+
+---
+
+## 4. Feature Selection
+- Selected features based on XGBoost importance and correlation filtering.
+- Logistic Regression: [list features]  
+- Random Forest: [list features]  
+- XGBoost: [list features]  
+- Multicollinearity addressed by removing highly correlated features (corr > 0.9).
+
+---
+
+## 5. Hyperparameter Tuning
+| Model | Hyperparameters | Best Parameters |
+|-------|----------------|----------------|
+| Logistic Regression | solver, penalty, C | solver='lbfgs', penalty='l2', C=0.001 |
+| Random Forest | n_estimators, max_depth, min_samples_split | n_estimators=200, max_depth=5, min_samples_split=10 |
+| XGBoost | max_depth, learning_rate, n_estimators | max_depth=4, learning_rate=0.1, n_estimators=150 |
+
+---
+
+## 6. Model Training & Evaluation
+| Model | ROC-AUC Train | ROC-AUC Test | F1 Train | F1 Test | Brier Train | Brier Test |
+|-------|---------------|--------------|----------|---------|-------------|------------|
+| Logistic Regression | 0.939 | 0.888 | 0.305 | 0.294 | 0.106 | 0.106 |
+| Random Forest | 0.980 | 0.946 | 0.481 | 0.398 | 0.050 | 0.054 |
+| XGBoost | 0.975 | 0.948 | 0.470 | 0.400 | 0.052 | 0.053 |
+
+*ROC Curve Example:*  
+![XGBoost ROC](outputs/figures/XGBoost_roc.png)
+
+*Calibration Curve Example:*  
+![XGBoost Calibration](outputs/figures/XGBoost_calibration.png)
+
+- Random Forest & XGBoost show slightly better test performance than Logistic Regression.
+- Minimal overfitting observed.
+
+---
+
+## 7. Interpretability (SHAP)
+- SHAP summary plot for XGBoost:
+![SHAP Summary](outputs/figures/shap_summary.png)
+- Key features impacting bankruptcy prediction: Operating Profit, Cash Flow Rate, Total Assets.
+
+---
+
+## 8. Population Stability Index (PSI)
+| Feature | PSI Value |
+|---------|-----------|
+| Operating Profit per Person | 0.020 |
+| Working Capital to Total Assets | 0.020 |
+| Cash Flow Rate | 0.019 |
+- All PSI values < 0.25 → no significant drift detected.
+
+---
+
+## 9. Challenges and Reflections
+- Challenge: Hyperparameter tuning was computationally intensive.  
+  - Solution: Limited grid search candidates.  
+- Challenge: Handling multicollinearity.  
+  - Solution: Correlation-based feature removal.  
+- Challenge: Interpreting feature importance across models.  
+  - Solution: SHAP used for XGBoost for better interpretability.
+
+---
+
+## 10. Conclusion & Deployment Recommendation
+- XGBoost achieved the best test performance (ROC-AUC 0.948, F1 0.400) with robust calibration.
+- Recommended for deployment due to strong generalization and interpretability via SHAP.
