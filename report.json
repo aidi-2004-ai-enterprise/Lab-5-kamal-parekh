@@ -1,0 +1,368 @@
+{
+    "LogisticRegression": {
+        "best_params": {
+            "solver": "lbfgs",
+            "penalty": "l2",
+            "C": 0.001
+        },
+        "roc_train": 0.9393297198160809,
+        "roc_test": 0.8881887052341598,
+        "brier_train": 0.1061300750127852,
+        "brier_test": 0.10568569116969238,
+        "f1_train": 0.30455868089233756,
+        "f1_test": 0.2938775510204082,
+        "roc_plot": "outputs\\figures\\LogisticRegression_roc.png",
+        "calibration_plot": "outputs\\figures\\LogisticRegression_calibration.png"
+    },
+    "RandomForestClassifier": {
+        "best_params": {
+            "n_estimators": 200,
+            "min_samples_split": 10,
+            "max_depth": 5
+        },
+        "roc_train": 0.9798294916392568,
+        "roc_test": 0.9458505509641872,
+        "brier_train": 0.049745876078069406,
+        "brier_test": 0.05361157719401693,
+        "f1_train": 0.48104956268221577,
+        "f1_test": 0.39759036144578314,
+        "roc_plot": "outputs\\figures\\RandomForestClassifier_roc.png",
+        "calibration_plot": "outputs\\figures\\RandomForestClassifier_calibration.png"
+    },
+    "XGBClassifier": {
+        "best_params": {
+            "n_estimators": 50,
+            "max_depth": 3,
+            "learning_rate": 0.1
+        },
+        "roc_train": 0.983271517505037,
+        "roc_test": 0.9336604683195593,
+        "brier_train": 0.06067370864490853,
+        "brier_test": 0.06428306789756012,
+        "f1_train": 0.43337484433374845,
+        "f1_test": 0.36363636363636365,
+        "roc_plot": "outputs\\figures\\XGBClassifier_roc.png",
+        "calibration_plot": "outputs\\figures\\XGBClassifier_calibration.png"
+    },
+    "psi": {
+        "df": [
+            {
+                "feature": " Operating profit per person",
+                "psi": 0.02015668324955795
+            },
+            {
+                "feature": " Working Capital to Total Assets",
+                "psi": 0.019571827698851334
+            },
+            {
+                "feature": " Cash flow rate",
+                "psi": 0.018993300636375637
+            },
+            {
+                "feature": " Non-industry income and expenditure/revenue",
+                "psi": 0.01880589760397771
+            },
+            {
+                "feature": " Quick Assets/Total Assets",
+                "psi": 0.017546817483950698
+            },
+            {
+                "feature": " Working Capital/Equity",
+                "psi": 0.017045418292797144
+            },
+            {
+                "feature": " Current Liability to Current Assets",
+                "psi": 0.016758300816624418
+            },
+            {
+                "feature": " Current Ratio",
+                "psi": 0.016596550873284426
+            },
+            {
+                "feature": " Equity to Long-term Liability",
+                "psi": 0.015283200290267715
+            },
+            {
+                "feature": " Inventory/Working Capital",
+                "psi": 0.015221572284404124
+            },
+            {
+                "feature": " Persistent EPS in the Last Four Seasons",
+                "psi": 0.014235446955544209
+            },
+            {
+                "feature": " Quick Ratio",
+                "psi": 0.01402243567203758
+            },
+            {
+                "feature": " Revenue per person",
+                "psi": 0.01350267018590847
+            },
+            {
+                "feature": " Cash/Current Liability",
+                "psi": 0.013476042528663707
+            },
+            {
+                "feature": " Total Asset Turnover",
+                "psi": 0.012602991273037423
+            },
+            {
+                "feature": " Inventory Turnover Rate (times)",
+                "psi": 0.012299012225995335
+            },
+            {
+                "feature": " ROA(C) before interest and depreciation before interest",
+                "psi": 0.012243379926501667
+            },
+            {
+                "feature": " Total expense/Assets",
+                "psi": 0.012175116801905016
+            },
+            {
+                "feature": " Long-term fund suitability ratio (A)",
+                "psi": 0.012110775856767677
+            },
+            {
+                "feature": " Fixed Assets to Assets",
+                "psi": 0.011987413543140014
+            },
+            {
+                "feature": " Net Value Per Share (B)",
+                "psi": 0.011796354155507043
+            },
+            {
+                "feature": " Degree of Financial Leverage (DFL)",
+                "psi": 0.01113320417391335
+            },
+            {
+                "feature": " Pre-tax net Interest Rate",
+                "psi": 0.010687639899596353
+            },
+            {
+                "feature": " Retained Earnings to Total Assets",
+                "psi": 0.010449637684291762
+            },
+            {
+                "feature": " ROA(A) before interest and % after tax",
+                "psi": 0.01016872710945288
+            },
+            {
+                "feature": " Tax rate (A)",
+                "psi": 0.009950901938568226
+            },
+            {
+                "feature": " Working capitcal Turnover Rate",
+                "psi": 0.009791380107463818
+            },
+            {
+                "feature": " Quick Assets/Current Liability",
+                "psi": 0.009677038358318455
+            },
+            {
+                "feature": " CFO to Assets",
+                "psi": 0.009418059464066276
+            },
+            {
+                "feature": " Total income/Total expense",
+                "psi": 0.009358290618360222
+            },
+            {
+                "feature": " Cash Flow Per Share",
+                "psi": 0.009272484833515091
+            },
+            {
+                "feature": " Cash Reinvestment %",
+                "psi": 0.009205643236574008
+            },
+            {
+                "feature": " Net Income to Stockholder's Equity",
+                "psi": 0.008967986839995752
+            },
+            {
+                "feature": " Net Value Growth Rate",
+                "psi": 0.008784827619630757
+            },
+            {
+                "feature": " Realized Sales Gross Profit Growth Rate",
+                "psi": 0.008588483301012003
+            },
+            {
+                "feature": " Net Worth Turnover Rate (times)",
+                "psi": 0.007927464740905107
+            },
+            {
+                "feature": " Operating Profit Per Share (Yuan \u00a5)",
+                "psi": 0.007639601286710235
+            },
+            {
+                "feature": " Allocation rate per person",
+                "psi": 0.007364035750334641
+            },
+            {
+                "feature": " Inventory/Current Liability",
+                "psi": 0.007254676324307165
+            },
+            {
+                "feature": " Current Assets/Total Assets",
+                "psi": 0.0072250315894237934
+            },
+            {
+                "feature": " After-tax Net Profit Growth Rate",
+                "psi": 0.007116995378190423
+            },
+            {
+                "feature": " Current Liability to Assets",
+                "psi": 0.006941097620858332
+            },
+            {
+                "feature": " Interest Expense Ratio",
+                "psi": 0.006543867226056675
+            },
+            {
+                "feature": " Cash Turnover Rate",
+                "psi": 0.006429958808725765
+            },
+            {
+                "feature": " Total Asset Return Growth Rate Ratio",
+                "psi": 0.006379348411238243
+            },
+            {
+                "feature": " Accounts Receivable Turnover",
+                "psi": 0.006343900828503271
+            },
+            {
+                "feature": " Continuous Net Profit Growth Rate",
+                "psi": 0.006196960018236459
+            },
+            {
+                "feature": " Average Collection Days",
+                "psi": 0.005912352575355252
+            },
+            {
+                "feature": " Interest Coverage Ratio (Interest expense to EBIT)",
+                "psi": 0.005741390478575908
+            },
+            {
+                "feature": " Inventory and accounts receivable/Net value",
+                "psi": 0.005693304288020058
+            },
+            {
+                "feature": " Cash Flow to Sales",
+                "psi": 0.005492492935154073
+            },
+            {
+                "feature": " Cash/Total Assets",
+                "psi": 0.005398011171233719
+            },
+            {
+                "feature": " Current Liabilities/Equity",
+                "psi": 0.0052330603976355645
+            },
+            {
+                "feature": " Fixed Assets Turnover Frequency",
+                "psi": 0.005119940795616448
+            },
+            {
+                "feature": " Operating Funds to Liability",
+                "psi": 0.005029156202878579
+            },
+            {
+                "feature": " Total debt/Total net worth",
+                "psi": 0.004963983325230998
+            },
+            {
+                "feature": " Debt ratio %",
+                "psi": 0.004803857814159105
+            },
+            {
+                "feature": " Equity to Liability",
+                "psi": 0.004803335144217869
+            },
+            {
+                "feature": " Quick Asset Turnover Rate",
+                "psi": 0.004746580965810301
+            },
+            {
+                "feature": " Total Asset Growth Rate",
+                "psi": 0.004721414219278333
+            },
+            {
+                "feature": " Operating Profit Rate",
+                "psi": 0.004692808179649166
+            },
+            {
+                "feature": " Operating Expense Rate",
+                "psi": 0.004396460869254968
+            },
+            {
+                "feature": " Operating Gross Margin",
+                "psi": 0.004384369568720225
+            },
+            {
+                "feature": " Interest-bearing debt interest rate",
+                "psi": 0.004134086624370483
+            },
+            {
+                "feature": " No-credit Interval",
+                "psi": 0.004042012482161973
+            },
+            {
+                "feature": " Total assets to GNP price",
+                "psi": 0.004024549856993094
+            },
+            {
+                "feature": " Cash Flow to Total Assets",
+                "psi": 0.0038409702308000587
+            },
+            {
+                "feature": " Cash Flow to Equity",
+                "psi": 0.0038137301440724965
+            },
+            {
+                "feature": " Current Asset Turnover Rate",
+                "psi": 0.0036771233724908685
+            },
+            {
+                "feature": " Revenue Per Share (Yuan \u00a5)",
+                "psi": 0.0036685477476906276
+            },
+            {
+                "feature": " Current Liabilities/Liability",
+                "psi": 0.003471074379164138
+            },
+            {
+                "feature": " Operating Profit Growth Rate",
+                "psi": 0.0025732364105505445
+            },
+            {
+                "feature": " Long-term Liability to Current Assets",
+                "psi": 0.002493520550229014
+            },
+            {
+                "feature": " Cash Flow to Liability",
+                "psi": 0.002353863538081835
+            },
+            {
+                "feature": " Contingent liabilities/Net worth",
+                "psi": 0.0019951192790673184
+            },
+            {
+                "feature": " Borrowing dependency",
+                "psi": 0.00160781893535536
+            },
+            {
+                "feature": " Research and development expense rate",
+                "psi": 0.001340077079341617
+            },
+            {
+                "feature": " Liability-Assets Flag",
+                "psi": 0.0011244914146227324
+            },
+            {
+                "feature": " Net Income Flag",
+                "psi": 6.859001350044054e-09
+            }
+        ],
+        "plot": "outputs\\figures\\psi_bar.png"
+    }
+}

@@ -1,0 +1,26 @@
+2025-08-14 19:56:18,064 | INFO | Logging initialized: outputs\logs\pipeline.log
+2025-08-14 20:01:08,921 | INFO | Logging initialized: outputs\logs\pipeline.log
+2025-08-14 20:04:54,055 | INFO | Logging initialized: outputs\logs\pipeline.log
+2025-08-14 20:27:20,010 | INFO | Logging initialized: outputs\logs\pipeline.log
+2025-08-14 20:43:28,253 | INFO | Logging initialized: outputs\logs\pipeline.log
+2025-08-14 20:44:18,562 | INFO | EDA plots generated: 191
+2025-08-14 20:44:18,860 | INFO | Training model: LogisticRegression
+2025-08-14 20:44:20,686 | INFO | Training model: RandomForestClassifier
+2025-08-14 20:44:38,034 | INFO | Pipeline complete. Report saved to outputs/report.json
+2025-08-15 18:21:59,154 | INFO | Logging initialized: outputs\logs\pipeline.log
+2025-08-15 18:23:01,515 | INFO | EDA plots generated: 191
+2025-08-15 18:23:01,877 | INFO | Training model: LogisticRegression
+2025-08-15 18:23:04,508 | INFO | Training model: RandomForestClassifier
+2025-08-15 18:23:22,577 | INFO | Pipeline complete. Report saved to outputs/report.json
+2025-08-15 18:36:03,662 | INFO | Logging initialized: outputs\logs\pipeline.log
+2025-08-15 18:36:51,042 | INFO | EDA plots generated: 191
+2025-08-15 18:36:51,277 | INFO | Training model: LogisticRegression
+2025-08-15 18:36:52,936 | INFO | Training model: RandomForestClassifier
+2025-08-15 18:37:13,092 | INFO | Training model: XGBClassifier
+2025-08-15 18:37:28,799 | INFO | Pipeline complete. Report saved to outputs/report.json
+2025-08-15 18:42:11,303 | INFO | Logging initialized: outputs\logs\pipeline.log
+2025-08-15 18:43:16,707 | INFO | EDA plots generated: 191
+2025-08-15 18:43:16,994 | INFO | Training model: LogisticRegression
+2025-08-15 18:43:18,755 | INFO | Training model: RandomForestClassifier
+2025-08-15 18:43:36,506 | INFO | Training model: XGBClassifier
+2025-08-15 18:43:46,580 | INFO | Pipeline complete. Report saved to outputs/report.json
