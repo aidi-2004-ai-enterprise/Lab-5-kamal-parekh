@@ -12,7 +12,10 @@ Objective: Train, evaluate, and compare three models (Logistic Regression, Rando
 - Missing values handled by median imputation.
 
 *Example Figure:*  
-![Correlation Heatmap](outputs/figures/correlation_heatmap.png)
+![Correlation Heatmap]
+<img width="1200" height="900" alt="corr_heatmap" src="https://github.com/user-attachments/assets/54f829db-138f-4023-9ad0-b2931da05c26" />
+
+
 
 ---
 
@@ -50,10 +53,14 @@ Objective: Train, evaluate, and compare three models (Logistic Regression, Rando
 | XGBoost | 0.975 | 0.948 | 0.470 | 0.400 | 0.052 | 0.053 |
 
 *ROC Curve Example:*  
-![XGBoost ROC](outputs/figures/XGBoost_roc.png)
+![XGBoost ROC]
+<img width="960" height="720" alt="RandomForestClassifier_calibration" src="https://github.com/user-attachments/assets/1462b7ee-0996-4e97-b960-9208c38a0f50" />
+
 
 *Calibration Curve Example:*  
-![XGBoost Calibration](outputs/figures/XGBoost_calibration.png)
+![XGBoost Calibration]
+<img width="960" height="720" alt="RandomForestClassifier_calibration" src="https://github.com/user-attachments/assets/5db03cb5-f238-4970-9ad3-22dfd82acae7" />
+
 
 - Random Forest & XGBoost show slightly better test performance than Logistic Regression.
 - Minimal overfitting observed.
@@ -62,8 +69,9 @@ Objective: Train, evaluate, and compare three models (Logistic Regression, Rando
 
 ## 7. Interpretability (SHAP)
 - SHAP summary plot for XGBoost:
-![SHAP Summary](outputs/figures/shap_summary.png)
+![SHAP Summary]
 - Key features impacting bankruptcy prediction: Operating Profit, Cash Flow Rate, Total Assets.
+<img width="1200" height="2962" alt="psi_bar" src="https://github.com/user-attachments/assets/6abf7f6b-d6ac-4fe7-bf72-0faecc85843b" />
 
 ---
 
