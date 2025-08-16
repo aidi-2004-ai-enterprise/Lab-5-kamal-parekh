@@ -98,3 +98,7 @@ Objective: Train, evaluate, and compare three models (Logistic Regression, Rando
 ## 10. Conclusion & Deployment Recommendation
 - XGBoost achieved the best test performance (ROC-AUC 0.948, F1 0.400) with robust calibration.
 - Recommended for deployment due to strong generalization and interpretability via SHAP.
+
+ruff linting 
+- Purpose: Ensure code quality, enforce PEP standards, improve readability and maintainability.
+<img width="788" height="66" alt="image" src="https://github.com/user-attachments/assets/fb1fc1bb-3fd3-462b-bf0f-c7b6a676a3c1" />
