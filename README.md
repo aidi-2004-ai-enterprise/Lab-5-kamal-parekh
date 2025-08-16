@@ -12,14 +12,13 @@ This project implements a **Model Implementation and Evaluation Pipeline** for p
 - **Data Stability Analysis**: Computes Population Stability Index (PSI) to detect data drift.  
 - **Reproducibility**: Random seeds are set; PEP-compliant code using Ruff.
 
-python -m venv .venv
-source .venv/bin/activate  # Linux/Mac
-.venv\Scripts\activate     # Windows
-
 ##How to Run
+- python -m venv .venv
+- source .venv/bin/activate  # Linux/Mac
+- .venv\Scripts\activate     # Windows
 
-pip install -r requirements.txt
-python training_pipeline.py --input_csv "path/to/data.csv" --target_column "Bankrupt?"
+-  pip install -r requirements.txt
+-  python training_pipeline.py --input_csv "path/to/data.csv" --target_column "Bankrupt?"
 
 ##Notes
 
@@ -30,6 +29,23 @@ The pipeline supports stratified train/test splits to handle class imbalance.
 Ruff was used to ensure PEP-compliance; run ruff check training_pipeline.py to verify code quality.
 
 The pipeline is designed for reproducibility; random seeds are fixed.
+
+
+**Lab 4 Influence**:
+- Guided preprocessing, feature selection, and model selection.  
+- Feature importance and correlation analyses influenced final features.  
+
+**Recommended Model**:
+- **XGBoost** is recommended due to superior ROC-AUC, low Brier Score, interpretability via SHAP, and stable PSI metrics.
+
+---
+
+## Notes
+- The pipeline is reproducible and designed for deployment.  
+- Outputs are saved in `outputs/` for easy reference.  
+- Ruff ensures PEP-compliant code.
+
+
 
 
 
