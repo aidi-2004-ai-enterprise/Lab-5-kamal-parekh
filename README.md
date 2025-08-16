@@ -1,4 +1,4 @@
-# Company Bankruptcy Prediction Pipeline
+# Lab-5 Company Bankruptcy Prediction Pipeline
 
 ## Overview
 This project implements a **Model Implementation and Evaluation Pipeline** for predicting company bankruptcy using the [Company Bankruptcy Prediction dataset](https://www.kaggle.com/datasets/fedesoriano/company-bankruptcy-prediction). The pipeline automates data preprocessing, feature selection, model training, hyperparameter tuning, evaluation, and interpretability analysis. It is designed to be reproducible and ready for deployment in production environments, including AirFlow DAGs.
