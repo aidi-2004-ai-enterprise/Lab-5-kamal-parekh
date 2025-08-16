@@ -99,7 +99,7 @@ ruff linting
 
 
 
-1. Main Challenges and How They Were Overcome
+# Main Challenges and How They Were Overcome
 
 Class Imbalance and Skewed Features: Some features and the target were imbalanced. Addressed by using stratified train/test splits and scaling features appropriately.
 
@@ -109,7 +109,7 @@ Hyperparameter Tuning Efficiency: Large search space made tuning computationally
 
 Code Quality and Maintainability: Ensuring the pipeline followed best practices was challenging. Overcome by running Ruff for PEP-compliance and fixing linting issues.
 
-2. Influence of Lab 4 Research
+# Influence of Lab 4 Research
 
 Lab 4 analysis guided feature selection, preprocessing choices, and model selection.
 
@@ -119,7 +119,7 @@ Lab 4’s insights on scaling, encoding, and handling missing values directly in
 
 Feature importance and correlation analyses from Lab 4 helped determine which features to retain, ensuring model interpretability and performance.
 
-3. Recommended Model for Deployment
+# Recommended Model for Deployment
 
 XGBoost is recommended for deployment due to:
 
