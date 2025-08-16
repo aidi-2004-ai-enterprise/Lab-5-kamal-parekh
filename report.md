@@ -9,13 +9,7 @@ Objective: Train, evaluate, and compare three models (Logistic Regression, Rando
 - Feature distributions examined using histograms and boxplots.
 - Correlation heatmap identified multicollinearity between features X and Y.
 - Outliers detected in feature Z; addressed during preprocessing.
-- Missing values handled by median imputation.
-
-*Example Figure:*  
-![Correlation Heatmap]
-<img width="1200" height="900" alt="corr_heatmap" src="https://github.com/user-attachments/assets/54f829db-138f-4023-9ad0-b2931da05c26" />
-
-
+- Missing values handled by median imputation
 
 ---
 
