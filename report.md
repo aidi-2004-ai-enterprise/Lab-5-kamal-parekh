@@ -23,9 +23,9 @@ Objective: Train, evaluate, and compare three models (Logistic Regression, Rando
 
 ## 4. Feature Selection
 - Selected features based on XGBoost importance and correlation filtering.
-- Logistic Regression: [list features]  
-- Random Forest: [list features]  
-- XGBoost: [list features]  
+- Logistic Regression   
+- Random Forest  
+- XGBoost  
 - Multicollinearity addressed by removing highly correlated features (corr > 0.9).
 
 ---
